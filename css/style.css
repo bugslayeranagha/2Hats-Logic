@@ -7,7 +7,7 @@
 body {
   font-family: 'Nunito', sans-serif;
   background-color: #fff;
-  background-image: url('/images/Line.png');
+  background-image: url('../images/Line.png');
 }
 
 /* Main landing page container */
@@ -121,7 +121,7 @@ body {
 .landing-page__left-head::after {
   position: absolute;
   content: "";
-  background-image: url('/images/Icon.png');
+  background-image: url('../images/Icon.png');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -281,7 +281,7 @@ body {
 /* Right image gallery styling */
 .landing-page__images {
   width: 38%;
-  background-image: url('/images/Mask\ group.png');
+  background-image: url('../images/Mask\ group.png');
   display: flex;
   flex-wrap: wrap;
   padding: 26px 37px;
