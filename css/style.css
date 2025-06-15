@@ -355,6 +355,10 @@ body {
     font-size: 40px;
   }
 
+  .landing-page__left-head {
+    width: 75%;
+  }
+
   .btn {
     font-size: 20px;
   }
