@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff;
+  background-image: url('/images/Line.png');
+}
+
+/* Main landing page container */
+.landing-page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Container left side styling */
+.landing-page__left {
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+}
+
+.landing-page__left-content {
+  padding: 42px 94px 42px 118px;
+}
+
+/* Hamburger Button Styles */
+.landing-page__left-hamburger-btn {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.landing-page__left-hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #2F584E;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Navbar Links Container */
+.landing-page__left-navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+/* Navbar styling */
+.landing-page__left-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo styling */
+.landing-page__left-navbar-logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1A1A1A;
+  line-height: 100%;
+  min-width: fit-content;
+}
+
+.landing-page__left-navbar-links a {
+  color: #838383;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.landing-page__left-navbar-links a:hover {
+  color: #2F584E;
+  transform: scale(1.05);
+}
+
+/* Main text content area */
+.landing-page__left-text {
+  margin-top: 65px;
+  width: 90%;
+}
+
+/* Heading text styling */
+.landing-page__left-head {
+  position: relative;
+}
+
+.main-head {
+  font-size: 64.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #151515;
+  line-height: 100%;
+}
+
+.main-head__sec-line {
+  margin-top: 10px;
+}
+
+.landing-page__left-head::after {
+  position: absolute;
+  content: "";
+  background-image: url('/images/Icon.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 9.67px;
+  width: 55.9px;
+  height: 55.9px;
+  background-color: #FF9257;
+  border-radius: 50%;
+}
+
+/* Informational text section styling */
+.landing-page__left-info {
+  margin: 28.7px 0;
+}
+
+.landing-page__left-info p {
+  font-size: 17.2px;
+  font-weight: 400;
+  color: #2D3134;
+  line-height: 1.4;
+}
+
+/* Student count section layout */
+.landing-page__left-count {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 69.88px;
+}
+
+.std-count {
+  font-size: 38.7px;
+  font-weight: 400;
+  color: #000000;
+  min-width: max-content;
+}
+
+.std-text {
+  color: #838383;
+}
+
+/* Student profile images container */
+.landing-page__count-images {
+  display: flex;
+  margin-left: 50px;
+}
+
+.count-image {
+  width: 91.37px;
+  height: 91.37px;
+}
+
+.count-image-2 {
+  width: 92.44px;
+  height: 91.37px;
+  margin-left: -15%;
+}
+
+.count-image-3 {
+  width: 94.59px;
+  height: 91.37px;
+  margin-left: -15%;
+}
+
+/* Button container layout */
+.landing-page__left-button {
+  display: flex;
+  margin-top: 73.79px;
+}
+
+/* Base button base styling */
+.btn {
+  font-size: 25.8px;
+  min-width: fit-content;
+  font-weight: 600;
+  line-height: 100%;
+  border-radius: 60.2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-booking {
+  background-color: #2F584E;
+  color: #FFFFFF;
+  padding: 26.87px 64.5px;
+  margin-right: 26.87px;
+}
+
+.btn-booking:hover {
+  transform: scale(1.05);
+  background-color: #3a6b5f;
+  box-shadow: 0 4px 12px rgba(47, 88, 78, 0.3);
+}
+
+.btn-journey {
+  background-color: transparent;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.btn-journey:hover {
+  color: #2F584E;
+}
+
+.btn-icon {
+  margin-right: 17.2px;
+  transition: transform 0.3s ease;
+}
+
+.btn-journey:hover .btn-icon {
+  transform: translateX(5px);
+}
+
+/* Footer section styling */
+.landing-page__left-footer {
+  height: 191px;
+  padding-left: 118px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF9257;
+  color: #FFFFFF;
+}
+
+.landing-page__footer-info {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+  position: relative;
+}
+
+/* Decorative left border for footer items */
+.landing-page__footer-info::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #F7BE2C;
+}
+
+.footer-count {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Right image gallery styling */
+.landing-page__images {
+  width: 38%;
+  background-image: url('/images/Mask\ group.png');
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px 37px;
+}
+
+.landing-page__images-show {
+  display: none;
+}
+
+.right-image {
+  max-width: 50%;
+  padding: 0 17px;
+  aspect-ratio: 1/1;
+  max-height: 297px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .landing-page__left-hamburger-btn {
+    display: block;
+  }
+  
+  .landing-page__left-navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+  
+  .landing-page__left-navbar-links.active {
+    right: 0;
+  }
+  
+  .landing-page__left-navbar-links a {
+    padding: 15px 0;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Animation for hamburger to X */
+  .landing-page__left-hamburger-btn.active .landing-page__left-hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .landing-page__left-hamburger-btn.active .landing-page__left-hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .landing-page__left-hamburger-btn.active .landing-page__left-hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .landing-page__left-text {
+    width: 100%;
+  }
+
+  .main-head {
+    font-size: 40px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+
+  .btn-booking {
+    padding: 20px 40px;
+    margin-right: 0;
+    max-width: fit-content;
+  }
+
+  .btn-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer-count {
+    font-size: 40px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+
+  .logo-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .landing-page__left-head::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .count-image,
+  .count-image-2,
+  .count-image-3 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .landing-page__footer-info {
+    width: 100%;
+  }
+
+  .landing-page__left-button {
+    flex-direction: column;
+  }
+}
+
+/* Tablet responsive styles */
+@media (max-width: 1024px) {
+  .landing-page {
+    flex-direction: column;
+  }
+
+  .landing-page__left-content {
+    padding: 40px;
+  }
+
+  .landing-page__images,
+  .landing-page__left,
+  .landing-page__left-navbar-icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .landing-page__left-footer {
+    height: auto;
+    padding-left: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .landing-page__images {
+    justify-content: center;
+  }
+
+  .btn-journey {
+    margin-top: 20px;
+  }
+
+  .landing-page__images-hide {
+    display: none;
+  }
+
+  .landing-page__images-show {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .right-image {
+    max-width: 30%;
+  }
+}
