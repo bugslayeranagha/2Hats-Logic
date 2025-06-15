@@ -8,6 +8,7 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: #fff;
   background-image: url('../images/Line.png');
+  background-size: contain;
 }
 
 /* Main landing page container */
