@@ -283,6 +283,7 @@ body {
 .landing-page__images {
   width: 38%;
   background-image: url('../images/Mask\ group.png');
+  background-size: contain;
   display: flex;
   flex-wrap: wrap;
   padding: 26px 37px;
