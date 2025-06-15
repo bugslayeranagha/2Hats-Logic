@@ -445,6 +445,7 @@ body {
   .landing-page__images {
     justify-content: center;
     padding: 0;
+    background-size: 90%;
   }
 
   .btn-journey {
